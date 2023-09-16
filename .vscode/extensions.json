@@ -1,0 +1,12 @@
+{
+    "recommendations": [
+        "ritwickdey.liveserver",
+        "formulahendry.auto-close-tag",
+        "formulahendry.auto-rename-tag",
+        "formulahendry.code-runner",
+        "icrawl.discord-vscode",
+        "usernamehw.errorlens",
+        "esbenp.prettier-vscode",
+        "dbaeumer.vscode-eslint"
+    ]
+}

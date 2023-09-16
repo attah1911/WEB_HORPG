@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar-logo {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.navbar-logo span {
+    color:steelblue;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+    
+  #sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    z-index: 100;
+}
+
+  #content {
+      margin-left: 250px; 
+      padding: 20px;
+      width: calc(100% - 250px); 
+      overflow-x: auto; 
+  }
+
+  #content-container {
+      display: flex;
+  }
+
+  #sidebar h1 {
+      margin-bottom: 20px;
+      padding: 10px 0;
+      border-bottom: 1px solid #555;
+  }
+
+  .menu-item {
+    padding: 15px 0;
+    border-bottom: 1px solid #555;
+    margin-bottom: 10px;
+  }
+
+  .menu-item:last-child {
+    border-bottom: none;
+  }
+
+  .menu-item a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+  }
+
+  .menu-item:hover a {
+    color: #007bff;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  .tombol-delete {
+    background-color: #dc3545;
+    border: none;
+    padding: 10px 15px;
+    color: white;
+    cursor: pointer;
+    font-size: 15px; 
+    border-radius: 4px;
+    text-decoration: none;
+  }
+
+  .tombol-edit {
+    background-color: #218838;
+    border: none;
+    padding: 10px 15px;
+    color: white;
+    cursor: pointer;
+    font-size: 15px; 
+    border-radius: 4px;
+    text-decoration: none;
+  }
+
+.form-group {
+    width: 100%;
+    margin: 0 auto;
+    background-color: #f7f7f7;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-field {
+    margin-bottom: 15px;
+}
+
+.form-field label {
+    font-weight: bold;
+    display: block;
+}
+
+.form-control {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.btn-success {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.btn-success:hover {
+    background-color: #218838;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.w10, .w30, .w20 {
+  width: calc(10% - 5px);
+  padding: 0 5px ;
+}
+
+.w20 {
+  width: calc(20% - 100px);
+}
+
+.w100 {
+  width: 100%;
+}
+
+.fl {
+  float: left;
+}
+
+.clear {
+  clear: both;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2px;
+    border-bottom: 1px solid #ccc;
+}
+
+.column {
+    padding: 5px;
+    overflow: hidden; 
+    white-space: nowrap; 
+    text-overflow: ellipsis; 
+}
+
+.w10 {
+    flex-basis: 10%;
+}
+
+.w20 {
+    flex-basis: 20%;
+}
+
+/* Pop-up styling */
+.popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 9999;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.popup-button {
+  margin-top: 10px;
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.popup-button:hover {
+  background-color: #0056b3;
+}
+
+.notification {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 15px;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  z-index: 9999;
+}
+
+.imgsedang {
+  width: 200px;
+  height: auto;
+  position: relative;
+  float: left;
+  border: 0;
+  overflow: hidden;
+}
+
+.imgsedang img {
+  width: 100%;
+}
+
+.imghapus {
+  position: absolute;
+  right: 10px;
+  bottom: 30px;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  border-radius: 50%;
+  background: #dc3545;
+  color: #fff;
+  font-size: 19px;
+  cursor: pointer; 
+}
+
+.imghapus a:hover {
+  color: yellow;
+}
+
+.imghapus a {
+  text-decoration: none;
+  color: #333;
+}

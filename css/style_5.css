@@ -1,0 +1,316 @@
+:root {
+    --primary: #323232;
+    --bg: #1A1A1B;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--bg);
+    color: white;
+}
+
+/*nav bar*/
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:1.4rem 7%;
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+}
+
+
+.navbar .navbar-logo {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.navbar .navbar-logo span {
+    color:steelblue;
+}
+
+.navbar .navbar-isi a {
+    color:#2C74B3;
+    display:  inline-block;
+    font-weight: 700;
+    font-size: 1rem;
+    margin: 0 1.9rem;
+}
+
+.navbar .navbar-isi a:hover {
+    color: #2C74B3;
+}
+
+.navbar .navbar-isi a::after {
+    content: '';
+    display: block;
+    padding-bottom: 0.5rem;
+    border-bottom: 0.1rem solid #2C74B3;
+    transform: scaleX(0);
+    transition: 0.5s;
+}
+
+.navbar .navbar-isi a:hover::after {
+    transform: scaleX(1);
+}
+
+.navbar .navbar-tambahan a {
+    color: #1A1A1B;
+    margin: 0 0.5rem;
+}
+
+#menuBar {
+    display: none;
+}
+
+.navbar-tambahan {
+    display: flex;
+    width: auto;
+}
+
+.navbar-tambahan .input-group {
+    display: flex;
+    align-items: center;
+    color: #1A1A1B;
+    margin-left: auto;
+}
+
+.navbar .navbar-tambahan .menubar{
+    justify-content: center;
+    margin-left: 15px;
+}
+
+.navbar-tambahan .input-group .tombol {
+    appearance: none;
+    background-color: transparent;
+    border: 0.100em solid #1A1A1A;
+    border-radius: 0.9375em;
+    box-sizing: border-box;
+    cursor: pointer;
+    color: black;
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0;
+    min-height: 3.05em;
+    min-width: 0;
+    margin-left: 10px; 
+    margin-right: auto;
+    outline: none;
+    padding: 2px 20px 2px 20px ;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s, transform 0.3s, border-color 0.3s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    will-change: transform;
+}
+
+.navbar-tambahan .input-group .tombol:disabled {
+    pointer-events: none;
+   }
+   
+.navbar-tambahan .input-group .tombol:hover {
+    background-color: #176db9;
+    color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+   }
+   
+.navbar-tambahan .input-group .tombol:active {
+    box-shadow: none;
+    transform: translateY(0);
+    padding: 2px 18px 2px 18px;
+   }
+
+.navbar-tambahan .input-group .tombol a {
+    color: inherit;
+    transition: color 0.3s;
+}
+
+.navbar-tambahan .input-group .tombol a:hover {
+    color: white;
+}
+
+.user-name {
+    font-weight: bold;
+    color: black; 
+    margin-right: 10px;
+    font-size: 1.2rem; 
+}
+
+img {
+    align-items: center;
+    width: 500px; 
+    height: auto;
+}
+
+.container-trending h1 {
+    padding-top: 6rem;
+    color: brown;
+}
+
+/**/
+
+.kotak {
+    background-color: #f7f7f7;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    max-width: 24cm; 
+    padding: 20px; 
+    margin: 0 225px ;
+    
+  }
+  
+  .kotak h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .kotak p {
+    font-size: 20px;
+    color: #000000;
+    overflow: hidden;
+  }
+
+.kotak .info {
+    margin-right: 450px;
+    font-size: 15px;
+    color: #808080;
+}
+
+.info span {
+    text-align: left;
+}
+
+.image-container-detail {
+    display: flex;
+    justify-content: space-between;
+}
+
+.image-container-detail img {
+    box-shadow: 1px 3px 10px 2px #92afc9;
+}
+
+.gambar1 {
+    position: relative;
+    padding-left: 10px;
+}
+
+.gambar2 {
+    position: relative;
+    margin-top: 230px;
+    margin-right: 10px;
+    float: right;
+}
+
+.taller-image {
+    width: 590px; 
+    height: auto; 
+    transition: transform 0.5s;
+}   
+    .taller-image:hover {
+        transform: scale(1.1);
+    }
+
+.fade-image {
+    width: 590px; 
+    height: auto; 
+    transition: transform 0.5s;
+}
+    .fade-image:hover {
+        transform: scale(1.1);
+    }
+
+.image-container .text1 {
+    padding-left: 20px;
+    padding-top: 10px;
+    text-align: center;
+}
+
+.image-container .text2 {
+    padding-left: 20px;
+    padding-top: 10px;
+    text-align: center;
+}
+
+.image-container .gambar1 button {
+    position: relative;
+    display: inline-block;
+    margin: 15px;
+    padding: 15px 30px;
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: #25D366;
+    background: transparent;
+    cursor: pointer;
+    transition: ease-out 0.5s;
+    border: 2px solid #25D366;
+    border-radius: 10px;
+    box-shadow: inset 0 0 0 0 #25D366;
+    font-weight: bold;
+}
+      
+.image-container .gambar1 button:hover {
+    color: white;
+    box-shadow: inset 0 -100px 0 0 #25D366;
+}
+      
+.image-container .gambar1 button:active {
+    transform: scale(0.9);
+}
+
+.image-container .gambar2 button {
+    position: relative;
+    display: inline-block;
+    margin: 15px;
+    padding: 15px 30px;
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: #725AC1;
+    background: transparent;
+    cursor: pointer;
+    transition: ease-out 0.5s;
+    border: 2px solid #725AC1;
+    border-radius: 10px;
+    box-shadow: inset 0 0 0 0 #725AC1;
+    font-weight: bold;
+}
+      
+.image-container .gambar2 button:hover {
+    color: white;
+    box-shadow: inset 0 -100px 0 0 #725AC1;
+}
+      
+.image-container .gambar2 button:active {
+    transform: scale(0.9);
+}
+
+.image-container .gambar1 a {
+    text-decoration: none;
+    color: white;
+}
+
+.image-container .gambar2 a {
+    text-decoration: none;
+    color: white;
+}

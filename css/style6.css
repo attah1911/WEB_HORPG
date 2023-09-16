@@ -1,0 +1,87 @@
+
+.komentar_1 {
+    background-color: #f7f7f7;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    max-width: 20cm; 
+    margin-left: 290px; 
+}
+
+.edit_input {
+    background-color: #333;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: #f7f7f7;
+}
+
+textarea {
+    background-color: #333;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #f7f7f7;
+}
+
+button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+
+button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/**/
+
+.komentar_box {
+    background-color: #f7f7f7;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    max-width: 20cm; 
+    margin-left: 290px; 
+  }
+  
+  .isi_komen {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .isi_komen p {
+    margin: 0;
+    padding: 5px 0;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+  }
+  
+  .isi_komen .nama {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .isi_komen .tanggal {
+    color: #888;
+  }
+  
+  .isi_komen .isi {
+    color: #413b3b;
+  }
+  
+  

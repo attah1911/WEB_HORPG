@@ -1,0 +1,886 @@
+:root {
+    --primary: #323232;
+    --bg: #111111;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--bg);
+    color: white;
+}
+
+/*nav bar*/
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:1.4rem 7%;
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+}
+
+
+.navbar .navbar-logo {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #551A8B;
+}
+
+.navbar .navbar-logo span {
+    color:steelblue;
+}
+
+.navbar .navbar-isi a {
+    color:#2C74B3;
+    display:  inline-block;
+    font-weight: 700;
+    font-size: 1rem;
+    margin: 0 1.9rem;
+}
+
+.navbar .navbar-isi a:hover {
+    color: #2C74B3;
+}
+
+.navbar .navbar-isi a::after {
+    content: '';
+    display: block;
+    padding-bottom: 0.5rem;
+    border-bottom: 0.1rem solid #2C74B3;
+    transform: scaleX(0);
+    transition: 0.5s;
+}
+
+.navbar .navbar-isi a:hover::after {
+    transform: scaleX(1);
+}
+
+.navbar .navbar-tambahan a {
+    color: #1A1A1B;
+    margin: 0 0.5rem;
+}
+
+#menuBar {
+    display: none;
+}
+
+.navbar-tambahan {
+    display: flex;
+    width: auto;
+}
+
+.navbar-tambahan .input-group {
+    display: flex;
+    align-items: center;
+    color: #1A1A1B;
+    margin-left: auto;
+}
+
+.navbar .navbar-tambahan .menubar{
+    justify-content: center;
+    margin-left: 15px;
+}
+
+.navbar-tambahan .input-group .tombol {
+    appearance: none;
+    background-color: transparent;
+    border: 0.100em solid #1A1A1A;
+    border-radius: 0.9375em;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0;
+    min-height: 3.05em;
+    min-width: 0;
+    margin-left: 10px; 
+    margin-right: auto;
+    outline: none;
+    padding: 2px 20px 2px 20px ;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s, transform 0.3s, border-color 0.3s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    will-change: transform;
+}
+
+.navbar-tambahan .input-group .tombol:disabled {
+    pointer-events: none;
+   }
+   
+.navbar-tambahan .input-group .tombol:hover {
+    background-color: #176db9;
+    color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+   }
+   
+.navbar-tambahan .input-group .tombol:active {
+    box-shadow: none;
+    transform: translateY(0);
+    padding: 2px 18px 2px 18px;
+   }
+
+.navbar-tambahan .input-group .tombol a {
+    color: inherit;
+    transition: color 0.3s;
+}
+
+.navbar-tambahan .input-group .tombol a:hover {
+    color: white;
+}
+
+.user-name {
+    font-weight: bold;
+    color: black; 
+    margin-right: 10px;
+    font-size: 1.2rem; 
+}
+
+.container-trending h1 {
+    padding-top: 6rem;
+    color: brown;
+}
+
+/* isi*/
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-image: url('../img/laman_depan.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.hero .content {
+    position: relative;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    border: 10px #2C74B3;
+    line-height: 2.8cm;
+}
+
+.hero .content h2 span {
+    align-items: center;
+    color: steelblue;
+    text-align: center;
+    text-shadow: 0 0 15px #ffffff;
+    font-size: 100px;
+  
+    
+}
+
+.hero .content h2 {
+    color: #551A8B;
+    text-align: center;
+    text-shadow: 0 0 15px #ffffff;
+    font-size: 100px;
+   
+}
+
+.hero .content p {
+    color: #522181;
+    font-size: 17px;
+    line-height: 18px;
+    text-shadow: 0 0 15px #333;
+}
+
+/*tmbol yg ada di home*/
+.hero .content a {
+    
+    padding: 12px 24px;
+    background-color: #176db9;
+    color: #f5f2f8;
+    font-weight: 550;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 16px;
+    text-decoration: none;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .hero .content a:hover {
+    background-color: #551a8b;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    color: #fff;
+  }
+  
+  .hero .content a:active {
+    opacity: 0.7;
+  }
+  
+/* end */
+
+
+/* mainpage */
+.mainpage {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.content_berita {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+}
+
+.boxnews {
+    display: flex;
+    margin-left: 30px;
+    margin-bottom: 20px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-radius: 0.75rem;
+    background-color: rgb(163, 163, 163);
+    box-shadow: 1px 1px 20px 1px #000000;
+}
+
+.boxnews .img {
+    width: 30%;
+    position: relative;
+    background-clip: border-box;
+    margin-top: 1.8rem;
+    margin-bottom: 1rem;
+    margin-left: 1.5rem;
+    margin-right: 1rem;
+    border-radius: 0.75rem;
+}
+
+.boxnews .img img {
+    border-radius: 0.75rem;
+    width: 256px;
+    height: auto;
+    box-shadow: 1px 1px 15px 1px #0000007a;
+}
+
+.boxnews .info-berita {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1.5rem;
+    text-align: left;
+    flex: 1;
+}
+
+.boxnews .info-berita .title-berita {
+    flex: 1;
+    margin-bottom: 10px;
+}
+
+.boxnews .info-berita .title-berita a {
+    text-decoration: none;
+    color: #333;
+}
+
+.boxnews p {
+    color: #333;
+    margin-top: 5px;
+}
+
+.sidebar {
+    flex: 1;
+    padding: 20px;
+    margin-right: 20px;
+}
+
+.card-kecil-populer {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #c82d2d;
+    justify-content: center;
+    display: flex; 
+    border-radius: 7px;
+}
+
+
+.card-text-populer h3 {
+    flex: 1; 
+    color: rgb(204, 13, 13);
+    margin-left: 10px;
+    font-size: 10px;
+}
+
+.card-image-kecil {
+    margin-right: 10px; 
+    max-width: 100px; 
+    height: 500px; 
+}
+/*  */
+
+
+/* BUAT BERITA KECIL */
+.card-kecil {
+    flex-direction: column;
+    position: relative;
+    margin: 0 20px 20px 1px;
+    display: grid; 
+    align-items: center; 
+}
+
+.left-position {
+    justify-content: flex-end; 
+    width: auto;
+}
+
+.card-berita-kecil {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 1px 3px 10px 1px;
+    background-color: #f9f9f9;
+    display: flex;
+    width: 360px;
+    border-radius: 7px;
+}
+
+.card-berita-kecil .info-berita-kecil {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1.5rem;
+    text-align: left;
+    flex: 1;
+}
+
+.card-berita-kecil .info-berita-kecil .view-berita {
+    font-size: 10px;
+    color: black;
+    margin-bottom: 5px;
+}
+
+.card-berita-kecil img {
+    height: 80px;
+    border-radius: 10px;
+}
+
+.card-text-kecil {
+    flex: 1;
+    margin-left: 10px;
+    font-size: 10px;
+}
+
+.card-text-kecil h1 {
+    font-size: 12px;
+    margin: 0;
+}
+
+.card-text-kecil h1 a {
+    color: #333;
+}
+
+.card-image-kecil {
+    margin-right: 10px;
+    max-width: 100px;
+    height: 500px;
+}
+
+/*  */
+
+
+/*trending mulai*/
+.container-trending h1 {
+    text-align: center;
+    color: #2C74B3;
+}
+
+.container-trending span {
+    color: #551A8B;
+}
+
+/*-------card-------------*/
+.kontainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2cm;
+    justify-content: center;
+    
+}
+
+.card {
+    display: flex;
+    float: right;
+    margin: 0 10px 0;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 0.75rem;
+    background-color: rgb(163, 163, 163);
+    width: 350px;
+    height: 390px;
+    box-shadow: 1px 1px 20px 1px #000000;
+  }
+  
+    .header {
+    position: relative;
+    background-clip: border-box;
+    margin-top: 1.8rem;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    border-radius: 0.75rem;
+    box-shadow: 0 10px 15px -3px rgba(51, 55, 58, 0.4),0 4px 6px -4px rgba(33,150,243,.4);
+    height: 16rem;
+  }
+  
+
+  .info {
+    border: none;
+    padding: 1.5rem;
+    text-align: center;
+  }
+  
+  .title {
+    color: rgb(38 50 56);
+    letter-spacing: 0;
+    line-height: 1.375;
+    font-weight: 600;
+    font-size: 1.75rem;
+    margin-bottom: 0.5rem;
+    font-family: 'Lexend Deca', sans-serif;
+  }
+
+  .info {
+    color: #ffffff;
+  }
+  
+  .footer {
+    padding: 0.75rem;
+    border: 1px solid #7a1f78;
+    border-radius: 0.75rem;
+    text-align: center;
+  }
+  
+  .tag {
+    font-weight: 300;
+    font-size: .75rem;
+    display: block;
+  }
+  
+  .btn {
+    text-align: center;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    border: none;
+    outline: none;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: .72rem;
+    padding: 0.75rem 1.8rem;
+    background-color: #551a8b;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: 0.4s;
+  }
+
+  .btn a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+  }
+
+  .btn:hover {
+    box-shadow: 0 4px 0px -1px rgb(255, 255, 255),0 2px 4px -2px rgba(33,150,243,.4);
+  }
+
+  .btn:active {
+    transform: scale(0.97);
+    box-shadow: 7px 5px 56px -10px black;
+  }
+/*-------card-------------end*/
+
+/* List Game start ini baru**********************************************/
+.list h1 {
+    text-align: center;
+    color: #176db9;
+    padding-top: 6rem;
+    font-size: 2.3rem;
+}
+
+.list span {
+    color: #551A8B;
+}
+
+.list .gallery {
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: repeat(5, 80vw);
+    grid-template-rows: 1fr;
+    grid-column-gap: 1rem;
+    grid-row-gap: 1rem;
+    height: 70vh;
+    overflow-y: hidden;
+}
+
+li {
+    scroll-snap-align: center;
+    display: inline-block;
+    border-radius: 3px;
+    font-size: 0;
+}
+
+.list a img {
+    scroll-snap-align: center;
+    display: inline-block;
+    border-radius: 3px;
+    font-size: 0;
+    margin-right: 40px;
+}
+
+.gallery {
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: repeat(5, 80vw);
+    grid-template-rows: 1fr;
+    grid-column-gap: 1rem;
+    grid-row-gap: 1rem;
+    overflow: scroll;
+    height: 90vh;
+    scroll-snap-type: both mandatory;
+    scroll-padding: 1rem;
+}
+
+li {
+    scroll-snap-align: center;
+    display: inline-block;
+    border-radius: 3px;
+    font-size: 0;
+}
+
+li a:hover img {
+    transform: scale(1.1);
+}
+
+li a img {
+    object-fit: cover;
+    object-position: top;
+    width: 98%;
+    height: 100%;
+    transition: transform 0.6s;
+    vertical-align: middle;
+    pointer-events: auto;
+}
+
+.list ::-webkit-scrollbar {
+    display: none;
+}
+  
+.list ::-webkit-scrollbar {
+    display: none;
+}
+
+/*sampe sini****************************/
+
+/* List Game start */
+.card-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 0.75rem;
+    background-color: white;
+    width: 720px;
+    height: 370px;
+    box-shadow: 0 4px 6px -1px rgba(0,0,0,.1),
+    0 2px 4px -2px rgba(0,0,0,.1);
+}
+  
+.header-list {
+    position: relative;
+    background-clip: border-box;
+    margin-top: 1.5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    border-radius: 0.75rem;
+    background-color: rgb(33 150 243);
+    box-shadow: 0 10px 15px -3px rgba(33,150,243,.4),0 4px 6px -4px rgba(33,150,243,.4);
+    height: 14rem;
+}
+  
+.info-list {
+    border: none;
+    padding: 1.5rem;
+    text-align: center;
+}
+  
+.title-list {
+    color: rgb(38 50 56);
+    letter-spacing: 0;
+    line-height: 1.375;
+    font-weight: 600;
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+  
+.footer-list {
+    padding: 0.75rem;
+    border: 1px solid rgb(236 239 241);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(0, 140, 255, 0.082);
+}
+  
+.tag-list {
+    font-weight: 300;
+    font-size: .75rem;
+    display: block;
+    color: black;
+}
+  
+.lorem {
+    color: black;
+}
+  
+.action-list {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    border: none;
+    outline: none;
+    box-shadow: 0 4px 6px -1px rgba(33,150,243,.4),0 2px 4px -2px rgba(33,150,243,.4);
+    color: rgb(255 255 255);
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: .75rem;
+    padding: 0.75rem 1.5rem;
+    background-color: rgb(33 150 243);
+    border-radius: 0.5rem;
+}
+  
+  
+/* List Game end */
+
+/* sosial start*/
+.sosial h1 {
+    text-align: center;
+    color: #176db9;
+    padding-top: 6rem;
+    font-size: 2.3rem;
+  }
+  
+.sosial span {
+    color: #551A8B;
+  }
+  
+.image-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.image-container img {
+    box-shadow: 1px 3px 10px 2px #92afc9;
+}
+
+.gambar1 {
+    position: relative;
+    padding-left: 10px;
+}
+
+.gambar2 {
+    position: relative;
+    margin-top: 230px;
+    margin-right: 10px;
+    float: right;
+}
+
+.taller-image {
+    width: 590px; 
+    height: auto; 
+    transition: transform 0.5s;
+}   
+    .taller-image:hover {
+        transform: scale(1.1);
+    }
+
+.fade-image {
+    width: 590px; 
+    height: auto; 
+    transition: transform 0.5s;
+}
+    .fade-image:hover {
+        transform: scale(1.1);
+    }
+
+.image-container .text1 {
+    padding-left: 20px;
+    padding-top: 10px;
+    text-align: center;
+}
+
+.image-container .text2 {
+    padding-left: 20px;
+    padding-top: 10px;
+    text-align: center;
+}
+
+.image-container .gambar1 button {
+    position: relative;
+    display: inline-block;
+    margin: 15px;
+    padding: 15px 30px;
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: #25D366;
+    background: transparent;
+    cursor: pointer;
+    transition: ease-out 0.5s;
+    border: 2px solid #25D366;
+    border-radius: 10px;
+    box-shadow: inset 0 0 0 0 #25D366;
+    font-weight: bold;
+}
+      
+.image-container .gambar1 button:hover {
+    color: white;
+    box-shadow: inset 0 -100px 0 0 #25D366;
+}
+      
+.image-container .gambar1 button:active {
+    transform: scale(0.9);
+}
+
+.image-container .gambar2 button {
+    position: relative;
+    display: inline-block;
+    margin: 15px;
+    padding: 15px 30px;
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: #725AC1;
+    background: transparent;
+    cursor: pointer;
+    transition: ease-out 0.5s;
+    border: 2px solid #725AC1;
+    border-radius: 10px;
+    box-shadow: inset 0 0 0 0 #725AC1;
+    font-weight: bold;
+}
+      
+.image-container .gambar2 button:hover {
+    color: white;
+    box-shadow: inset 0 -100px 0 0 #725AC1;
+}
+      
+.image-container .gambar2 button:active {
+    transform: scale(0.9);
+}
+
+.sosial .image-container .gambar1 a {
+    text-decoration: none;
+    color: white;
+}
+
+.sosial .image-container .gambar2 a {
+    text-decoration: none;
+    color: white;
+}
+
+
+/* sosial end*/
+.lisensi{
+    background-color: black;
+}
+.lisensi p {
+    text-align: center;
+}
+
+/*media queris*/
+/*laptop*/
+@media (max-width: 1366px) {
+    
+    html {
+        font-size: 75%;
+    }
+    
+}
+
+/*tablet*/
+@media (max-width: 768px) {
+    
+    html {
+        font-size: 62.5%;
+    }
+
+
+    #menuBar {
+        display: inline-block;
+    }
+
+    .navbar .navbar-isi {
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        background-color: white;
+        width: 30rem;
+        height: 100vh;
+        transition: 0.9s;
+    }
+
+    .navbar .navbar-isi.active {
+        right: 0;
+    }
+
+    .navbar .navbar-isi a {
+    color:#2C74B3;
+    display: block;
+    margin: 1.5rem;
+    padding: 0.5rem;
+    font-size: 1.6rem;
+    }
+
+    .navbar .navbar-isi a::after {
+        transform-origin: 0 0;
+    }
+
+    .navbar .navbar-isi a:hover::after {
+        transform: scaleX(0.3);
+    }
+}
+
+/*mobile*/
+@media (max-width: 450px) {
+    
+    html {
+        font-size: 55%;
+    }
+}
+
+@media (max-width: 770px) {
+  .image-container {
+    flex-direction: column; 
+    justify-content: center;
+    padding-left: 2cm;
+  }
+  .carousel {
+    grid-template-columns: repeat(5, 90vw); 
+    grid-column-gap: 0.25rem; 
+    grid-row-gap: 0.25rem; 
+    height: 40vh; 
+  }
+}
